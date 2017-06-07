@@ -6,12 +6,18 @@ package model;
 
 /**
  *
- * @author hakkahi / acordier - IUT Lyon 1 - 2016
+ * @author Julien CULIERAS
  */
 public class DisappearEffect extends Effect {
-    
+
 
     @Override
+    /**
+     * @param int line  Ligne où le joueur joue son jeton
+     * @param int column  Colonne où le joueur joue son jeton
+     * @param Game game  Partie en cours
+     * Cet effect fait disparaitre le jeton
+     */
     public void playEffect(int line, int column, Game game) {
         int tile_id = game.getBoard().getTileIJ(line, column).getStatus();
         int player1_id = game.getPlayer1().getId();

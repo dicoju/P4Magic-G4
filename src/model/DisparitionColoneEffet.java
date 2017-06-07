@@ -5,8 +5,14 @@ package model;
  * @author julien
  */
 public class DisparitionColoneEffet extends Effect {
-
+    
     @Override
+     /**
+     * @param int line  Ligne où le joueur joue son jeton
+     * @param int column  Colonne où le joueur joue son jeton
+     * @param Game game  Partie en cours
+     * Cet effet fait disparaitre toute la colone où est joué le jeton
+     */   
     public void playEffect(int line, int column, Game game) {
         
         int i;

@@ -25,6 +25,7 @@ public class DisappearEffectTest {
 
     static Game aGame;
 
+    
     public DisappearEffectTest() {
     }
 
