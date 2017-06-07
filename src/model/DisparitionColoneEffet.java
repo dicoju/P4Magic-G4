@@ -1,5 +1,7 @@
 package model;
 
+import static model.EffectFactory.createEffect;
+
 /**
  *
  * @author julien
@@ -19,5 +21,6 @@ public class DisparitionColoneEffet extends Effect {
         for(i = 0; i < 10; i++){
             game.getBoard().getTileIJ(i, column).setStatus(-1);
         }
+        game.getBoard().getTileIJ(line, column).setEffect(createEffect());
     }
 }
