@@ -50,6 +50,9 @@ public class Tile {
         this._effect = effect;
     }
 
+    public void setColorMorte(){
+        
+    }
     /**
      * Returns the effect currently active on the tile
      *

@@ -20,6 +20,7 @@ public class DisparitionColoneEffet extends Effect {
         int i;
         for(i = 0; i < 10; i++){
             game.getBoard().getTileIJ(i, column).setStatus(-1);
+           // game.getBoard().getTileIJ(i, column).setColor();
         }
         game.getBoard().getTileIJ(line, column).setEffect(createEffect());
     }
